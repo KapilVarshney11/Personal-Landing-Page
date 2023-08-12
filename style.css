@@ -136,25 +136,21 @@ html,body{
     padding-top: 18px;
 }
 
-@media (max-width: 768px) {
-    #limg1 {
-        background-size: cover;
-        background-position: center;
-    }
-
+@media (max-width: 360px) {
     .textcontainer {
-        top: 10%;
-        left: 10%;
-        font-size: 18px;
+        top: 8%;
+        left: 5%;
+        font-size: 16px;
     }
 
     .span1, .span2, span {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .textcontainer2 {
-        padding: 50px;
-        font-size: 14px;
+        padding: 30px;
+        font-size: 12px;
+        letter-spacing: 0.3em;
     }
 
     #grid {
@@ -163,8 +159,8 @@ html,body{
     }
 
     .webdev, .appdev, .ui {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 90%;
+        margin-bottom: 15px;
     }
 
     #me {
@@ -172,19 +168,21 @@ html,body{
     }
 
     .contactme, .aboutme {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 90%;
+        margin-bottom: 15px;
     }
 
     #me h2 {
-        font-size: 30px;
-        padding-left: 0;
+        font-size: 28px;
     }
 
     #me p {
-        padding: 15px;
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
-
-
+/* Add a media query for medium Android phones */
+@media (min-width: 361px) and (max-width: 768px) {
+    /* Adjust styles as needed for medium-sized Android phones */
+}
