@@ -163,6 +163,13 @@ html,body{
         margin-bottom: 15px;
     }
 
+    .webdev img,
+    .appdev img,
+    .ui img {
+        max-width: 100%;
+        height: auto;
+    }
+
     #me {
         flex-direction: column;
     }
