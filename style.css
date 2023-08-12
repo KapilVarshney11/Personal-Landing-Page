@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     width: 100%;
     min-height: 100%;
     font-family: "roboto", sans-serif;
@@ -12,7 +12,7 @@ html,body{
     font-weight: 300;
 }
 
-#limg1{
+#limg1 {
     background-image: url(images/developer.png);
     min-height: 100vh;
     background-size: cover;
@@ -20,25 +20,24 @@ html,body{
     position: relative;
 }
 
-.textcontainer{
+.textcontainer {
     color: white;
     position: absolute;
     top: 16%;
     left: 25%;
     font-size: 25px;
-    
 }
 
-.span1, .span2, span{
+.span1, .span2, span {
     font-size: 45px;
 }
 
-#blackbox{
+#blackbox {
     min-height: 250px;
     background-color: #000;
 }
 
-.textcontainer2{
+.textcontainer2 {
     text-align: center;
     color: white;
     padding: 100px;
@@ -46,150 +45,92 @@ html,body{
     letter-spacing: 0.5em;
 }
 
-#work{
+#work {
     min-height: 450px;
     padding: 50px;
 }
 
-#grid{
+#grid {
     min-height: 330px;
     padding: 25px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.webdev{
-    min-height: 116px;
-    width: 25vw;
-}
-
-.appdev{
-    width: 25vw;
-    min-height: 116px;
-}
-
-.ui{
-    width: 25vw;
-    min-height: 116px;
-}
-
-.content{
+.webdev, .appdev, .ui {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
     text-align: center;
 }
 
-  #grid h2{
+.content {
+    text-align: center;
+}
+
+#grid h2 {
     padding-top: 5px;
     text-align: center;
-  }
+}
 
-#grid p{
+#grid p {
     padding-top: 5px;
     text-align: center;
     letter-spacing: 0.2rem;
 }
 
-
-#me{
+#me {
     min-height: 300px;
     border: 2px solid black;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#me .contactme{
-    width: 50vw;
-    min-height: 20vh;
-    background-color: rgb(79, 126, 4);
+.contactme, .aboutme {
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
     padding: 20px;
 }
 
-#me .aboutme{
-    width: 50vw;
-    min-height: 20vh;
-    background-color: sienna;
-    padding: 20px;
-}
-
-#me h2{
+#me h2 {
     font-size: 40px;
-    padding-left: 30px;
     font-weight: 400;
 }
 
-#me p{
+#me p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 30px;
     color: white;
     line-height: 2em;
 }
 
-
-#blackbox{
+#blackbox2 {
     min-height: 10vh;
     border: 2px solid black;
-}
-
-#blackbox h4{
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
     text-align: center;
     padding-top: 18px;
 }
 
-@media (max-width: 360px) {
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     .textcontainer {
-        top: 8%;
-        left: 5%;
-        font-size: 16px;
+        top: 10%;
+        left: 10%;
+        font-size: 18px;
     }
 
     .span1, .span2, span {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .textcontainer2 {
-        padding: 30px;
-        font-size: 12px;
-        letter-spacing: 0.3em;
-    }
-
-    #grid {
-        flex-direction: column;
-        align-items: center;
+        padding: 50px;
+        font-size: 14px;
+        letter-spacing: 0.5em;
     }
 
     .webdev, .appdev, .ui {
-        width: 90%;
-        margin-bottom: 15px;
+        width: calc(50% - 20px);
     }
-
-    .webdev img,
-    .appdev img,
-    .ui img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    #me {
-        flex-direction: column;
-    }
-
-    .contactme, .aboutme {
-        width: 90%;
-        margin-bottom: 15px;
-    }
-
-    #me h2 {
-        font-size: 28px;
-    }
-
-    #me p {
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-
-/* Add a media query for medium Android phones */
-@media (min-width: 361px) and (max-width: 768px) {
-    /* Adjust styles as needed for medium-sized Android phones */
 }
