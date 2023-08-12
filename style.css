@@ -136,5 +136,55 @@ html,body{
     padding-top: 18px;
 }
 
+@media (max-width: 768px) {
+    #limg1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .textcontainer {
+        top: 10%;
+        left: 10%;
+        font-size: 18px;
+    }
+
+    .span1, .span2, span {
+        font-size: 30px;
+    }
+
+    .textcontainer2 {
+        padding: 50px;
+        font-size: 14px;
+    }
+
+    #grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .webdev, .appdev, .ui {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #me {
+        flex-direction: column;
+    }
+
+    .contactme, .aboutme {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #me h2 {
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    #me p {
+        padding: 15px;
+    }
+}
+
 
 
